@@ -1,0 +1,133 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% \usepackage[frenchb]{babel}
+\usepackage{setspace}
+
+\usepackage{microtype}
+\usepackage{mathtools}
+
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{float}
+\usepackage[export]{adjustbox}
+\usepackage[stable]{footmisc}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+% \usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{geometry}
+\usepackage[numbers,sort]{natbib}
+% \usepackage[nocompress]{cite}
+\geometry{a4paper,top=2.54cm,bottom=2.54cm,left=2.54cm,right=2.54cm,heightrounded}
+% \geometry{top=0.1cm,bottom=0.1cm,left=0.9cm,right=0.9cm}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{authblk}
+\usepackage{bbm}
+\usepackage{multirow}
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+\usepackage[algoruled,boxed,lined]{algorithm2e}
+% linesnumbered,
+\usepackage{chngcntr}
+\counterwithout{algocf}{section}
+% \counterwithin*{algocf}{subsection}
+% \counterwithin*{algocf}{subsubsection}
+% \renewcommand{\thealgocf}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{algocf}}
+\renewcommand{\thealgocf}{\arabic{section}.\arabic{algocf}}
+\usepackage{tabulary}
+\usepackage{tabularx}
+
+\numberwithin{equation}{section}
+% \numberwithin{equation}{subsection}
+% \numberwithin{equation}{subsubsection}
+
+\usepackage{chngcntr}
+\counterwithin{table}{section}
+% \counterwithin{table}{subsection}
+% \counterwithin{table}{subsubsection}
+
+\counterwithin{figure}{section}
+% \counterwithin{figure}{subsection}
+% \counterwithin{figure}{subsubsection}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+\DeclareUnicodeCharacter{00A0}{ }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt plus 5pt minus 3pt}
+
+\hypersetup{
+unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+colorlinks=true,        % false: boxed links; true: colored links
+linkcolor=black,        % color of internal links (change box color with linkbordercolor)
+citecolor=blue,        % color of links to bibliography
+filecolor=magenta,      % color of file links
+urlcolor=blue}           % color of external links
+
+\newcommand*{\SuperScriptSameStyle}[1]{%
+  \ensuremath{%
+    \mathchoice
+      {{}^{\displaystyle #1}}%
+      {{}^{\textstyle #1}}%
+      {{}^{\scriptstyle #1}}%
+      {{}^{\scriptscriptstyle #1}}%
+  }%
+}
+\newcommand*{\oneS}{\SuperScriptSameStyle{*}}
+\newcommand*{\twoS}{\SuperScriptSameStyle{**}}
+\newcommand*{\threeS}{\SuperScriptSameStyle{*{*}*}}
+
+% \usepackage[utf8]{inputenc}
+% \usepackage{fourier} 
+% \usepackage{array}
+% \usepackage{makecell}
+
+% \renewcommand\theadalign{bc}
+% \renewcommand\theadfont{\bfseries}
+% \renewcommand\theadgape{\Gape[4pt]}
+% \renewcommand\cellgape{\Gape[4pt]}
+
+% \usepackage{array}
+% \newcolumntype{Z}{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}X}
+
+\usepackage[flushleft]{threeparttable}

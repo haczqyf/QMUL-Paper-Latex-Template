@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+
+\input{formatsAndDefs}
+
+\begin{document}
+% \begin{spacing}{1}
+%----------------------------------------------------------------------------------------
+%   Title Page
+%----------------------------------------------------------------------------------------
+\pagenumbering{Alph}
+\begin{titlepage}            
+    \begin{flushleft}{
+        \includegraphics[width=0.3\linewidth]{figures/qmul_logo.png}\\
+        School of Business and Management\\
+        Queen Mary University of London\\[1cm]
+        Progression Paper for PhD Programme\\
+        21 June 2018\\[2cm]
+    }\end{flushleft}
+    \centering
+    \HRule \\[1cm]
+    {\huge Title}\\[1cm]
+    \HRule \\[1cm]
+
+    \begin{flushleft}{
+        PhD Student: \\
+        PhD Supervisors: \\
+        Progression Panel: \\[1cm]
+    }\end{flushleft}
+\end{titlepage}
+
+
+\pagenumbering{arabic}
+%----------------------------------------------------------------------------------------
+%   Introduction
+%----------------------------------------------------------------------------------------
+\section{Introduction\label{sec:introduction}}
+
+%----------------------------------------------------------------------------------------
+%   Section: Literature review
+%----------------------------------------------------------------------------------------
+\section{Literature review\label{sec:literature_review}}
+
+%----------------------------------------------------------------------------------------
+%   Section: Data
+%----------------------------------------------------------------------------------------
+\section{Data\label{sec:data}}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[c]{.45\textwidth}
+        \includegraphics[width=1.0\textwidth]{figures/cora_categoriesPercent_piechart.png}
+        \caption{CORA}
+        \label{fig:cora_catPercent}
+    \end{subfigure}
+    \begin{subfigure}[c]{.45\textwidth}
+        \includegraphics[width=1.0\textwidth]{figures/aminer_categoriesPercent_piechart.png}
+        \caption{AMiner}
+        \label{fig:aminer_catPercent}
+    \end{subfigure}
+    \caption{Frequency distributions of paper categories in CORA and AMiner.}
+    \label{fig:dataset_catPercent}
+\end{figure}
+%----------------------------------------------------------------------------------------
+%   Section: Research design
+%----------------------------------------------------------------------------------------
+\section{Methods\label{sec:research_design}}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ c|c }
+        \hline
+        \textbf{Measure} & \textbf{Note} \\ \hline
+        nb\_friends\_treated &  number of treated friends\\
+        nb\_friends\_unTreated & number of untreated friends\\
+        number\_friends\_nonEligible & number of non-eligible friends\\
+        nb\_friends\_eligible & this is the sum of treated and untreated friends\\
+        nb\_friends\_eligible\_and\_nonEligible & this is total sum of friends\\
+        \hline
+    \end{tabular}
+    \caption{Measures for the students' social network - Set of number of friends~\cite{newman2010}}
+    \label{table:social_network_measures_1}
+\end{table}
+%----------------------------------------------------------------------------------------
+%   Section: Results
+%----------------------------------------------------------------------------------------
+\section{Results\label{sec:results}}
+
+%----------------------------------------------------------------------------------------
+%   Future work
+%----------------------------------------------------------------------------------------    
+\section{Conclusion and future work\label{sec:conclusion_future_work}}
+
+%----------------------------------------------------------------------------------------
+%   Achievement
+%----------------------------------------------------------------------------------------    
+\section{Achievement}
+
+%----------------------------------------------------------------------------------------
+%   References
+%----------------------------------------------------------------------------------------
+\bibliographystyle{apa}
+\bibliography{references}
+
+% \end{spacing}
+\end{document}
